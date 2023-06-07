@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemateca - admin panal</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/svg+xml" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- custome css  -->
+    <link rel="stylesheet" href="./All Css/adminPage.css" />
+    <link rel="stylesheet" href="./All Css/adminPageRes.css">
+
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- login card  -->
+    <div id="login-card">
+        <h2>Cinemateca Admin</h2>
+        <div id="login-username-part">
+            UserName:
+            <input type="text" name="" id="login-userName" />
+        </div>
+
+        <div id="login-password-part">
+            Password:
+            <input type="password" name="" id="login-Password" />
+        </div>
+        <button id="login-userName-password-btn">Login</button>
+    </div>
+
+
+    <!-- navigations  -->
+    <section id="navigation-section" data-main-navigation>
+        <ul>
+            <li class="logo"><a class="logo"><img src="img/website-main-logo.png" alt=""></a></li>
+            <li class="navLinks">Sliders</li>
+            <li class="navLinks navLiActive">Movies</li>
+            <li class="navLinks">Series</li>
+            <li class="navLinks">Setting</li>
+        </ul>
+    </section>
+
+
+    <!-- overlay  -->
+    <div class="overlay" data-main-overlay></div>
+
+
+    <!-- replase section on this  -->
+    <section id="main-content-section" style="position: relative;">
+        <header class="section-header">
+            <nav>
+                <div class="start-box">
+                    <button class="menu-open-btn" data-menu-open-btn>
+                        <ion-icon name="reorder-two"></ion-icon>
+                    </button>
+
+
+                    <h2 id="header-titile" data-header-title>Movies</h2>
+                </div>
+
+                <div class="end-box">
+                    <div class="search-bar">
+                        <input id="searchbox" placeholder="Search Movies" type="text" data-search-bar>
+
+                        <i class="fas fa-search" id="search_icon" data-search-icon></i>
+                    </div>
+
+                    <h2 id="nav-back-btn" data-back-btn>Back</h2>
+                </div>
+            </nav>
+        </header>
+
+        <!-- movies view section  -->
+        <section id="movie-section" data-movie-section></section>
+
+        <!-- insert movies section  -->
+        <section id="insert-movie-items" data-movies-insert-section>
+
+            <div class="Allitems">
+                <span class="item-lable">Card img:</span>
+                <input class="inputs" type="text" name="" id="card-img">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Poster img:</span>
+                <input class="inputs" type="text" name="" id="poster-img">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Content title:</span>
+                <input class="inputs" type="text" name="" id="content-title">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Content Description:</span>
+                <textarea class="inputs" maxlength="500" id="content-des"></textarea>
+            </div>
+
+            <div class="Allitems">
+
+                <span class="item-lable">Content genres:</span>
+
+                <div id="genres-box">
+                    <ul>
+                        <li>
+                            <input class="inputs" type="checkbox" name="Action" id="checkBox0">
+                            <label class="checkBoxTxt" for="Action">Action</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="Crime" id="checkBox1">
+                            <label class="checkBoxTxt" for="Crime">Crime</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="Adeventure" id="checkBox2">
+                            <label class="checkBoxTxt" for="Adeventure">Adeventure</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="Biography" id="checkBox3">
+                            <label class="checkBoxTxt" for="Biography">Biography</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="Animation" id="checkBox4">
+                            <label class="checkBoxTxt" for="Animation">Animation</label>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <input class="inputs" type="checkbox" name="Comady" id="checkBox5">
+                            <label class="checkBoxTxt" for="Comady">Comady</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="Documentary" id="checkBox6">
+                            <label class="checkBoxTxt" for="Documentary">Documentary</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="Drama" id="checkBox7">
+                            <label class="checkBoxTxt" for="Drama">Drama</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="WebSeries" id="checkBox8">
+                            <label class="checkBoxTxt" for="WebSeries">FamilyFriendly</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="18+" id="checkBox9">
+                            <label class="checkBoxTxt" for="18+">18+</label>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <input class="inputs" type="checkbox" name="SciFi" id="checkBox10">
+                            <label class="checkBoxTxt" for="SciFi">SciFi</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="Horor" id="checkBox11">
+                            <label class="checkBoxTxt" for="Horor">Horor</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="Thriller" id="checkBox12">
+                            <label class="checkBoxTxt" for="Thriller">Thriller</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="Mystery" id="checkBox13">
+                            <label class="checkBoxTxt" for="Mystery">Mystery</label>
+                        </li>
+
+                        <li>
+                            <input class="inputs" type="checkbox" name="History" id="checkBox14">
+                            <label class="checkBoxTxt" for="History">History</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Content year:</span>
+                <input class="inputs" type="text" name="" id="content-year">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Content rate:</span>
+                <input class="inputs" type="text" name="" id="content-rate">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Content url:</span>
+                <input class="inputs" type="text" name="" id="content-url">
+            </div>
+
+            <div class="Allitems" id="content-from-lable">
+                <span class="item-lable">Content from:</span>
+                <div class="drop-down">
+                    <span id="content-from" class="drop-down-title" data-content-type-section>select<i
+                            class="fa-sharp fa-solid fa-caret-down"></i></span>
+                    <div class="drop-down-items" data-drop-down-elem-box>
+                        <span data-content-type-down-itmes>bollywood</span>
+                        <span data-content-type-down-itmes>hollywood</span>
+                        <span data-content-type-down-itmes>south</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Content episodes table name:</span>
+                <input class="inputs" type="text" name="" id="content-episodes-table-name">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Content download Web url:</span>
+                <input class="inputs" type="text" name="" id="content-download-web-url">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Content download url:</span>
+                <input class="inputs" type="text" name="" id="content-download-url">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Content age restriction:</span>
+                <input class="inputs" type="text" name="" id="content-age-reg">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Content duration:</span>
+                <input class="inputs" type="text" name="" id="content-duration">
+            </div>
+
+            <div class="Allitems" id="lastDrop">
+                <span class="item-lable">Content type:</span>
+                <div class="drop-down">
+                    <span id="content-type" class="drop-down-title" data-content-type-section2>select<i
+                            class="fa-sharp fa-solid fa-caret-down"></i></span>
+                    <div class="drop-down-items">
+                        <span data-content-type-down-itmes2>movie</span>
+                        <span data-content-type-down-itmes2>series</span>
+                        <span data-content-type-down-itmes2>tv shows</span>
+                        <span data-content-type-down-itmes2>trailer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submint-btn">
+                <button id="insert-btn"><a>Insert</a></button>
+            </div>
+        </section>
+
+        <!-- alert massage  -->
+        <div id="insertItemIdMass">
+            <div id="mass">Your Content id</div>
+            <div id="cont-id">5</div>
+            <div id="submint-btn">
+                <button id="ok-btn"><a>Ok</a></button>
+            </div>
+        </div>
+
+        <!-- sliders view section  -->
+        <section id="slider-content-section" data-slider-section></section>
+
+        <!-- insert sliders section  -->
+        <section id="insert-slider-items" data-insert-slider-section>
+            <div class="Allitems">
+                <span class="item-lable">Slider img:</span>
+                <input class="inputs" type="text" name="" id="slider-img">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Slider Duration:</span>
+                <input class="inputs" type="text" name="" id="slider-duration">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Slider Rating:</span>
+                <input class="inputs" type="text" name="" id="slider-rating">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Slider Genres:</span>
+                <input class="inputs" placeholder="Genre1 / Genre2 / Genre3" type="text" name="" id="slider-gens">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Slider title:</span>
+                <input class="inputs" type="text" name="" id="slider-title">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Slider Description:</span>
+                <textarea class="inputs" maxlength="500" id="slider-des"></textarea>
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Slider Content Id:</span>
+                <input class="inputs" type="text" name="" id="slider-content-id">
+            </div>
+
+            <div class="submint-btn">
+                <button id="insert-card-btn" data-insert-slider-btn><a>Insert</a></button>
+            </div>
+        </section>
+
+        <!-- series view section  -->
+        <section id="series-section" data-series-section></section>
+
+        <!-- insert series ep section  -->
+        <section id="insert-series-items" data-insert-series-section>
+            <div class="Allitems">
+                <span class="item-lable">Series name:</span>
+                <input type="text" name="" id="series-name" disabled>
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Series Table name:</span>
+                <input class="inputs" type="text" name="" id="ep-table-name" disabled>
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Episode img:</span>
+                <input class="inputs" type="text" name="" id="ep-img">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Episode title:</span>
+                <input class="inputs" type="text" name="" id="ep-title">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Episode Description:</span>
+                <textarea class="inputs" maxlength="300" id="ep-descri"></textarea>
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Episode Duration:</span>
+                <input class="inputs" type="text" name="" id="ep-duration">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Episode Date:</span>
+                <input class="inputs" type="text" name="" id="ep-date">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Episode Url:</span>
+                <input class="inputs" type="text" name="" id="ep-url">
+            </div>
+
+            <div class="Allitems">
+                <span class="item-lable">Episode No:</span>
+                <input class="inputs" type="text" name="" id="ep-no">
+            </div>
+
+            <div class="submint-btn">
+                <button id="insert-series-btn" data-insert-slider-btn><a>Insert</a></button>
+            </div>
+        </section>
+
+        <!-- series ep view section  -->
+        <section id="view-series-ep-section"></section>
+
+        <!-- setting section  -->
+        <section id="setting-section" data-setting-section>
+            <div id="section-card">
+                <h2>Cinemateca Admin</h2>
+                <div id="username-part">
+                    UserName:
+                    <input type="text" name="" id="userName" />
+                </div>
+
+                <div id="password-part">
+                    Password:
+                    <input type="password" name="" id="Password" />
+                </div>
+                <button id="update-userName-password">Upadte</button>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- movie added in watchlist massage -->
+    <div id="notifyMassage" class="">
+        <span id="icon"><i class="fa-solid fa-circle-check"></i></span>
+        <span id="massage">Item Added in WatchList</span>
+    </div>
+
+    <!-- search box results -->
+    <div class="search_bx2"></div>
+
+    <!-- icon links and Js Files  -->
+    <script src="https://kit.fontawesome.com/aa9801b5c5.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="./All Js/adminPage.js"></script>
+    <script type="module" src="./All Js/adminPageNet.js"></script>
+</body>
+
+</html>

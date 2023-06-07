@@ -1,0 +1,145 @@
+/* nav section start  */
+@media only screen and (max-width: 1280px) {
+
+    :root {
+
+        --fs-5: 18px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #navigation-section {
+        width: 300px;
+        height: 100%;
+        background-color: rgb(18, 18, 18);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #navigation-section {
+        width: 300px !important;
+        height: 100%;
+        background-color: rgb(18, 18, 18);
+        position: absolute;
+        top: 0;
+        left: -300px;
+        z-index: 999999;
+        transition: .4s ease-in-out;
+    }
+
+    #main-content-section {
+        width: 100vw !important;
+    }
+
+    #main-content-section header nav .start-box ion-icon {
+        display: unset;
+    }
+
+    .navActive {
+        left: 0px !important;
+    }
+
+    body.active {
+        overflow: hidden;
+    }
+
+    #navigation-section ul li {
+        font-size: var(--fs-5);
+        padding: 20px 3vw;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #navigation-section ul li {
+        padding-inline: 20px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+
+    #main-content-section header nav .titleActive {
+        display: none;
+        transition: .4s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    #main-content-section header nav .backBtnActive {
+        display: none;
+        transition: .4s ease-in-out;
+    }
+
+    .search_bx2 {
+        right: 80px;
+    }
+}
+/* nav section end  */
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+
+    #insert-items {
+        width: 95%;
+        margin: 50px auto 0 auto;
+        color: white;
+        font-size: var(--fs-5);
+        margin-bottom: 160px !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .Allitems {
+        width: 100%;
+        max-height: min-content;
+        margin-top: 50px !important;
+        display: block !important;
+    }
+
+    #insert-items .Allitems input {
+        margin-top: 10px !important;
+    }
+
+    #insert-items :nth-child(5) #genres-box input{
+        margin: 0 !important;
+    }
+
+
+    #insert-items :nth-child(5) #genres-box{
+        overflow: scroll;
+        scroll-behavior: smooth;
+    
+    }
+
+    #insert-items .Allitems .drop-down{
+        margin-left: 20px !important;
+    }
+
+    #insert-slider-items{
+        margin: 0 auto 0 auto!important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #slider-content-section{
+        grid-template-columns: repeat(auto-fit, minmax(100px, calc(100vw - 20px)));
+        justify-content: center !important;
+    }
+    
+    #slider-content-section .slider-card{
+        width: calc(100vw - 20px);
+    }
+}

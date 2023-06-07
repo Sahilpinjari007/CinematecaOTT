@@ -1,0 +1,381 @@
+:root {
+
+    --white: #fff;
+    --body: rgb(17, 16, 16);
+    --transBorder: rgb(255, 255, 255, .1);
+    --navLinks: rgb(255, 255, 255, .7);
+    --searchBox2: rgb(184, 184, 184, .3);
+
+    --fs-1: 36px;
+    --fs-2: 32px;
+    --fs-3: 30px;
+    --fs-4: 24px;
+    --fs-5: 20px;
+    --fs-6: 18px;
+    --fs-7: 16px;
+    --fs-8: 15px;
+    --fs-9: 14px;
+    --fs-10: 13px;
+    --fs-11: 12px;
+    --fs-12: 11px;
+
+    --fw-500: 500;
+    --fw-700: 700;
+}
+
+@media only screen and (max-width: 281px) {
+
+
+    header nav .logo img {
+        width: 150px;
+    }
+
+    header nav .logo2 img {
+        margin-left: -10px;
+    }
+
+    .menu-open-btn.active{
+        margin-left: 10px !important;
+    }
+}
+
+
+@media only screen and (max-width: 1050px){
+    .search_bx2 {
+        right: 70px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .search_bx2 {
+        right: 120px;
+    }
+}
+
+
+@media only screen and (max-width: 700px){
+    .search_bx2 {
+        right: 108px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .search_bx2 {
+        right: 95px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .search_bx2 {
+        right: 0px;
+        left: 5px;
+    }
+}
+
+
+
+@media only screen and (max-width: 530px) {
+
+    .logo.active {
+        display: none;
+    }
+
+    header nav.navActive2 {
+        justify-content: right;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    body.active{
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+    header nav{
+        position: absolute;
+    }
+
+    header{
+        transition: unset;
+    }
+
+    .navbar.active {
+        overflow: hidden;
+    }
+
+    .menu-open-btn {
+        color: white;
+        font-size: 40px;
+        margin-left: 20px;
+        display: flex;
+    }
+
+    .end_bx ul li div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .menu-close-btn {
+        color: white;
+        font-size: 25px;
+        padding: 5px;
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .menu-close-btn ion-icon {
+        --ionicon-stroke-width: 80px;
+    }
+
+    .logo2 {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav .logo2 img {
+        width: 250px;
+    }
+
+
+    .navigations {
+
+        position: absolute;
+        height: 100vh !important;
+        width: 100%;
+        max-width: 300px;
+        flex-direction: column;
+        background-color: rgb(17, 16, 16);
+        top: 0;
+        right: -300px;
+        box-shadow: -1px 0 3px hsl(0, 0%, 0%, 0.2);
+        transition: 0.15s ease-in;
+        visibility: hidden;
+        z-index: 99999999999999999;
+    }
+
+    .navActive {
+        right: 0;
+        visibility: visible;
+        transition: 0.25s ease-out;
+    }
+
+    .navigations li div {
+        padding: 15px 0;
+    }
+
+    .navigations li {
+        width: 100%;
+        padding: 15px 25px;
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+    }
+
+    .navigations li a {
+
+        text-align: left;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .otherSectionActive{
+        z-index: -1 !important;
+    }
+
+    .button-container{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .masthead-card {
+        height: auto;
+        background: none;
+    }
+
+    .big-Poster {
+        min-height: unset !important;
+    }
+
+    .no-Internet-slider{   
+        top: 65px;
+    }
+
+
+    .masthead-card .image-holder {
+        height: calc(100vw * 0.5625);
+    }
+
+    .masthead-card .image-holder .imageloader {
+        max-width: 768px;
+        width: 100%;
+        height: calc(100vw * 0.5625)
+    }
+
+    .masthead-card .image-holder .imageloader img {
+        width: 100%;
+        height: 100%
+    }
+
+    .footer-grediant {
+        min-width: 100%;
+    }
+
+    .no-Internet-slider{   
+        height: calc(100vw * 0.5625);
+    }
+
+    .more-like-this-data .section-main-content2 a:nth-child(2) {
+        margin-left: 10px;
+    }
+
+    .no-Internect-cards :first-child {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .big-Poster .masthead-container {
+        height: auto;
+        width: 100%
+    }
+
+    .no-Internet-slider{   
+        width: 100%;
+        left: 0;
+        right: 0;
+        border-radius: unset !important;
+    }
+
+    .big-Poster .masthead-container .masthead-card {
+        border-radius: unset
+    }
+
+    .big-Poster .masthead-container .masthead-card .image-holder {
+        border-radius: unset
+    }
+    
+}
+
+@media only screen and (max-width: 675px) {
+
+    .big-Poster .movie-content {
+        display: none;
+    }
+
+    .btns2.active {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .btns2 {
+        left: 25px;
+        bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .btns2 :last-child button {
+        display: none;
+    }
+
+    #movie-attributes {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    :root {
+        --fs-2: 29px;
+    }
+
+    .extra-btns a button i {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    :root {
+        --fs-2: 26px;
+    }
+
+    .extra-btns a button i {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+
+    :root {
+        --fs-4: 26px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .more-like-this-data .section-main-content2 a .card2:hover {
+        width: 190px !important;
+        height: 260px !important;
+    }
+    
+    .section-main-content2 a .card2:hover .time-line {
+        visibility: visible;
+    }
+    
+    .section-main-content2 a .card2:hover .year {
+        visibility: visible;
+    }
+    
+    .section-main-content2 a .card2:hover .card2-contain {
+    
+        box-shadow: inset 0px -25px 30px black,
+            inset 0px 25px 30px black;
+    }
+    
+
+    header nav .end_bx ul li a:hover {
+        color: var(--white);
+    }
+
+    header nav .end_bx .search i:hover {
+        color: var(--white);
+    }
+
+    .btns button:hover {
+        border: 2px solid #000;
+        color: #fff;
+        background: #000;
+        box-shadow: 0px 3px 10px #000;
+    }
+    
+    .btns :last-child button:hover {
+        background: red;
+        border: 2px solid red;
+        color: #fff;
+        box-shadow: 0px 3px 10px red;
+    }
+
+    .button-container:hover {
+        opacity: 1;
+    }
+
+    .section-main-content2 a .card2:hover h5 {
+        max-width: 148px !important;
+    }
+
+    .section-main-content2 a .card2:hover h5 span {
+        overflow: visible;
+        white-space: unset;
+    }
+}

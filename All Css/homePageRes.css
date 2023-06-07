@@ -1,0 +1,358 @@
+:root {
+
+    --white: #fff;
+    --body: rgb(17, 16, 16);
+    --transBorder: rgb(255, 255, 255, .1);
+    --navLinks: rgb(255, 255, 255, .7);
+    --searchBox2: rgb(184, 184, 184, .3);
+
+    --fs-1: 36px;
+    --fs-2: 32px;
+    --fs-3: 30px;
+    --fs-4: 24px;
+    --fs-5: 20px;
+    --fs-6: 18px;
+    --fs-7: 16px;
+    --fs-8: 15px;
+    --fs-9: 14px;
+    --fs-10: 13px;
+    --fs-11: 12px;
+    --fs-12: 11px;
+
+    --fw-500: 500;
+    --fw-700: 700;
+}
+
+@media only screen and (max-width: 281px) {
+
+    header nav .logo img {
+        width: 150px;
+    }
+
+    header nav .logo2 img {
+        margin-left: -10px;
+    }
+
+    .menu-open-btn.active {
+        margin-left: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .search_bx2 {
+        right: 70px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .search_bx2 {
+        right: 120px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .search_bx2 {
+        right: 108px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .search_bx2 {
+        right: 95px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .search_bx2 {
+        right: 0px;
+        left: 5px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .tranding_bx {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tranding_bx li {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 281px) {
+
+    .tranding_bx li {
+        padding: 10px 0;
+        margin: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    body.active {
+        max-height: 100vh;
+        overflow: hidden;
+    }
+
+    .header {
+        height: calc(100vw * 0.5625);
+        margin-top: 65px;
+    }
+
+    .header nav {
+        height: 65px;
+        background: var(--body);
+        transition: unset;
+    }
+
+    .navbar.active {
+        overflow: hidden;
+    }
+
+    .menu-open-btn {
+        color: white;
+        font-size: 40px;
+        margin-left: 20px;
+        display: flex;
+    }
+
+    .end_bx ul li div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .menu-close-btn {
+        color: white;
+        font-size: 25px;
+        padding: 5px;
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .menu-close-btn ion-icon {
+        --ionicon-stroke-width: 80px;
+    }
+
+    .logo2 {
+        display: flex;
+        align-items: center;
+        margin: auto !important;
+    }
+
+    header nav .logo2 img {
+        width: 250px;
+    }
+
+    .navigations {
+        position: absolute;
+        height: 100vh !important;
+        width: 100%;
+        max-width: 300px;
+        flex-direction: column;
+        background-color: rgb(17, 16, 16);
+        top: 0;
+        right: -300px;
+        box-shadow: -1px 0 3px hsl(0, 0%, 0%, 0.2);
+        transition: 0.15s ease-in;
+        visibility: hidden;
+    }
+
+    .navActive {
+        right: 0;
+        visibility: visible;
+        transition: 0.25s ease-out;
+    }
+
+    .navigations li div {
+        padding: 15px 0;
+    }
+
+    .navigations li {
+        width: 100%;
+        padding: 15px 25px;
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+    }
+
+    .navigations li a {
+
+        text-align: left;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .section .section-data .section-button-container {
+        display: none;
+    }
+
+    .section.sectionActive {
+        z-index: -1;
+    }
+
+    .no-Internet-slider {
+        height: calc(100vw * 0.5625);
+        top: 65px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header .content {
+        display: none;
+    }
+
+    header #small-screen.active {
+        bottom: 50px;
+        left: 40px;
+        display: block
+    }
+}
+
+@media only screen and (max-width: 349px) {
+    .btns2 :last-child button {
+        display: none;
+    }
+
+    header #small-screen-det #small-s-title,
+    ul {
+        display: none !important;
+    }
+
+    header #small-screen {
+        left: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+
+    header .slider-location {
+        bottom: -12px !important;
+    }
+
+    header #small-screen {
+        bottom: 30px !important;
+        left: 30px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+
+    .logo.active {
+        display: none;
+    }
+
+    header nav.navActive2 {
+        justify-content: right;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .section .section-data .bottom-section-scrollers a:first-child,
+    .section .section-data .section-main-content a:first-child {
+        margin-left: 10px !important;
+    }
+
+    .cato_bx :first-child,
+    .no-Internect-cards :first-child {
+        margin-left: 10px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    :root {
+        --fs-2: 29px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    :root {
+        --fs-2: 26px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+
+    :root {
+        --fs-4: 26px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+    .section .section-data .section-main-content a .card2:hover {
+        width: 190px !important;
+        height: 260px !important;
+    }
+
+    .section .section-data .section-main-content a .card2:hover .time-line {
+        visibility: visible;
+    }
+
+    .section .section-data .section-main-content a .card2:hover .year {
+        visibility: visible;
+    }
+
+    .section .section-data .section-main-content a .card2:hover .card2-contain {
+
+        box-shadow: inset 0px -25px 30px black,
+            inset 0px 25px 30px black;
+    }
+
+    .section .section-data .section-button-container:hover {
+        opacity: 1;
+    }
+
+    header nav .end_bx ul li a:hover {
+        color: var(--white);
+    }
+
+    header nav .end_bx .search i:hover {
+        color: var(--white);
+    }
+
+    .btns button:hover {
+        border: 2px solid #000;
+        color: #fff;
+        background: #000;
+        box-shadow: 0px 3px 10px #000;
+    }
+
+    .btns :last-child button:hover {
+        background: red;
+        border: 2px solid red;
+        color: #fff;
+        box-shadow: 0px 3px 10px red;
+    }
+
+
+    .cato_bx button:hover {
+        background: rgb(184, 184, 184, .1);
+    }
+
+    .tranding_bx li a:hover {
+        color: #fff;
+    }
+
+    .section .section-data .section-main-content a .card2:hover h5 {
+        max-width: 148px !important;
+    }
+
+    .section .section-data .section-main-content a .card2:hover h5 span {
+        overflow: visible;
+        white-space: unset;
+    }
+}
